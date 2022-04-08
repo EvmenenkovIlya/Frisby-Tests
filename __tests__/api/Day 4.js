@@ -1,6 +1,6 @@
 const frisby = require("frisby");
   const Joi = frisby.Joi;
-  const secretKey = 'PMAK-6230f643cc4adf66c7dbe790'
+  const secretKey = 'PMAK-6230f643cc4adf66c7dbe790]'
   describe("Day4", () => {
     it('Check status', function () {
         return frisby.fetch('https://api.getpostman.com/collections', {
