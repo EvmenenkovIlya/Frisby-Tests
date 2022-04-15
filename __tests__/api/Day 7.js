@@ -25,9 +25,8 @@ describe('Day 7', ()=>{
     })
 
     it('Get different img', function() {
-        const count = new URLSearchParams({ count: 10 });
-        const key = new URLSearchParams({ api_key: 'DEMO_KEY' });
-        return frisby.fetch('https://api.nasa.gov/planetary/apod?' + key + '&' + count , {
+        const count = new URLSearchParams({ count: 10 , api_key: 'DEMO_KEY' });
+        return frisby.fetch(`https://api.nasa.gov/planetary/apod?${count}`, {
             method : 'get',
             headers: {
                 Accept: 'aplication/json', 
